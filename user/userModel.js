@@ -1,7 +1,8 @@
 const db = require('../data/dbConfig');
 
 function getUsers() {
-    return db('project')
+    return db('project as p')
+    .select('p.username')
 }
 
 function getUserId(id) {
