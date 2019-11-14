@@ -10,7 +10,7 @@ server.use(express.json());
 server.use(cors())
 
 server.get('/', (req, res) => {
-    res.json('Working!')
+    res.json({message: 'works'})
 })
 
 
